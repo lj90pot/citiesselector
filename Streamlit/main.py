@@ -14,7 +14,7 @@ from sklearn.preprocessing import StandardScaler
 
 # Function to load and preprocess the data
 def load_data():
-    data_df = pd.read_csv(r'C:\Users\luisj\Desktop\Ironhack\Archivos Ejercicios\09_Final project\Data\cities_clean_model.csv')
+    data_df = pd.read_csv(r'C:\Users\luisj\Desktop\Ironhack\Archivos Ejercicios\09_Final project\citiesselector\Data\cities_clean_model.csv')
     numeric_df = data_df.select_dtypes(include=[float, int])
 
     #Transform data
@@ -26,12 +26,15 @@ def load_data():
     kmeans = KMeans(n_clusters=3,n_init='auto', random_state=20)
     kmeans.fit(scalerss_numeric_df)
     clusters = kmeans.predict(scalerss_numeric_df)
+    
+    df=data_df
+    df['clusters'] = clusters
 
     # Perform PCA
-    pca = PCA(2)
-    df = pca.fit_transform(scalerss_numeric_df)
-    df = pd.DataFrame(df, columns=['PCA1', 'PCA2'])
-    df['clusters'] = clusters
+    #pca = PCA(2)
+    #df = pca.fit_transform(scalerss_numeric_df)
+    #df = pd.DataFrame(df, columns=['PCA1', 'PCA2'])
+    #df['clusters'] = clusters
 
     return df, numeric_df.columns.tolist(), numeric_df,data_df, kmeans, scaler_result
 

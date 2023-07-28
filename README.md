@@ -14,7 +14,12 @@ The repository is organized into the following folders:
 - **Streamlit**: [Streamlit application code]
 - **Tableau**: [Tableau dashboard]
 
+## Data
+
 The source data from Eurostat is not included in the repository
+The raw data contained no headers. These were added later. A dictionary was created for this purpose. 
+The data for each city was splitted in years. Fur the purpose of this exercise the most updated data for each city was selected to build the model. 
+The final dataset contains one row per city and the nulls are filled with the value for that variable in the country where the city is located. 
 
 ## Code Explanation
 
@@ -25,17 +30,27 @@ In this section, you will find an overview of the main code files in the reposit
 - **`03_EDA.ipynb`**: [This file explore the variables chosen, check for outliers and distributions]
 - **`04_KMeans.ipynb`**: [This file is used to compare models and select the best one to use. ]
 
+## Tableau dashboard
+
+A tableau dashboard is provided to help the exploration of the data and the distribution of the cities. 
+A dashboard shows the final clusterig of the cities and the variables values in each city. 
+
 ## Streamlit Explanation
 
 The repository includes a Streamlit application. The following files are related to the Streamlit app:
 
 - **`main.py`**: [This is the Streamlit app. Run this file from the terminal. The browser will open a tab with the application]
 
-## References
-
-This section contains helpful resources and references related to the project:
+## Trello Organization
 
 - [https://trello.com/b/oVlUVj2n/european-cities-recommender] Trello organizer
-- [Link to a tutorial or guide used in the project]
-- [Any other sources that were essential for the project]
+
+## Acknowledgments
+
+* [Xisca](https://www.linkedin.com/in/xisca-sorell-llull-39128949/)
+* [Sabina](https://www.linkedin.com/in/sabina-firtala/)
+* [Laz](https://www.linkedin.com/in/lazarus-kon-27549880/)
+* [Camille](https://www.linkedin.com/in/camillecoeurjoly/)
+* All my colleagues
+
 
