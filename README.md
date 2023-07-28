@@ -35,7 +35,7 @@ The repository includes a Streamlit application. The following files are related
 
 This section contains helpful resources and references related to the project:
 
-- [Link to a relevant website or paper]
+- [https://trello.com/b/oVlUVj2n/european-cities-recommender] Trello organizer
 - [Link to a tutorial or guide used in the project]
 - [Any other sources that were essential for the project]
 
