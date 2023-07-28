@@ -43,7 +43,7 @@ The repository includes a Streamlit application. The following files are related
 
 ## Trello Organization
 
-- [https://trello.com/b/oVlUVj2n/european-cities-recommender] Trello organizer
+- [Trello organizer](https://trello.com/b/oVlUVj2n/european-cities-recommender)
 
 ## Acknowledgments
 
